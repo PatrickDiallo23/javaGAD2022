@@ -19,7 +19,7 @@ public class PairOfThree {
             // To find the other two elements, start two index variables
             // from two corners of the array and move them toward each
             // other
-            l = i; // index of the first element in the remaining elements
+            l = i + 1; // index of the first element in the remaining elements
             r = arr_size - 1; // index of the last element
             while (l < r) {
                 if (array.get(i) + array.get(l) + array.get(r) == sum) {
@@ -38,7 +38,7 @@ public class PairOfThree {
             }
         }
 
-        // If we reach here, then no triplet was found
+        
         return count;
     }
 
